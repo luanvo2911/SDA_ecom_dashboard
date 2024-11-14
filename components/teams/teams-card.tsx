@@ -1,4 +1,4 @@
-import { User } from "@prisma/client";
+// import { User } from "@prisma/client";
 import { Card } from "../ui/card";
 import Image from "next/image";
 import { Button } from "../ui/button";
@@ -21,9 +21,10 @@ import {
 } from "../ui/dialog";
 import { Checkbox } from "../ui/checkbox";
 import { useState } from "react";
+import { Team } from "@/app/team/page";
 
 interface TeamMemberCardProps {
-  member: User;
+  member: Team;
   isPending: boolean;
   role: boolean;
 }
